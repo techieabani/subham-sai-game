@@ -4,6 +4,7 @@ var userClickedPattern = [];
 var gamePattern = [];
 var isGameStarted = false;
 var level = 0;
+var score = 0;
 
 $(".startBtn").on("click",function(){
 startGame();
@@ -16,6 +17,7 @@ $(document).on('click','.restartBtn',function(){
 function startGame() {
   if (!isGameStarted) {
     $("#level-title").text("Level " + level);
+    $("#score").text("Your Score is : " + score);
     nextSequence();
     isGameStarted = true;
   }
@@ -32,6 +34,8 @@ $(".btn").click(function(){
 function checkAnswer(currentLevel) {
 if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
   if (userClickedPattern.length === gamePattern.length) {
+      score+=100;
+      $("#score").text("Your Score Now : " + score);
     setTimeout(function(){
       nextSequence();
     },1000);
@@ -40,6 +44,7 @@ if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
   playSound("wrong");
   $("body").addClass("game-over");
   $("#level-title").html("Game Over, <button class='restartBtn' type='button' class='btn-info'>Click Me</button> to Restart");
+  $("#score").text("Your Final Score is : " + score);
   setTimeout(function(){
       $("body").removeClass("game-over");
   },200);
@@ -72,6 +77,7 @@ function animatePress(currentColour){
 
 function startOver(){
   level = 0;
+  score = 0;
   isGameStarted = false;
   gamePattern = [];
 }
