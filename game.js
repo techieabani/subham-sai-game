@@ -5,14 +5,21 @@ var gamePattern = [];
 var isGameStarted = false;
 var level = 0;
 
-$(document).keypress(function(){
+$(".startBtn").on("click",function(){
+startGame();
+});
+
+$(document).on('click','.restartBtn',function(){
+  startGame();
+});
+
+function startGame() {
   if (!isGameStarted) {
     $("#level-title").text("Level " + level);
     nextSequence();
     isGameStarted = true;
   }
-
-});
+}
 
 $(".btn").click(function(){
   var userChosenColour = $(this).attr("id");
@@ -32,7 +39,7 @@ if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
 } else {
   playSound("wrong");
   $("body").addClass("game-over");
-  $("#level-title").text("Game Over, Press Any Key to Restart");
+  $("#level-title").html("Game Over, <button class='restartBtn' type='button' class='btn-info'>Click Me</button> to Restart");
   setTimeout(function(){
       $("body").removeClass("game-over");
   },200);
