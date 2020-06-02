@@ -13,7 +13,8 @@ body {
   height : 4rem;
   width: 4rem;
 }
-#level-title {
+
+#level-title,#score {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
   margin:  1%;
