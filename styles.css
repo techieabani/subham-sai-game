@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  position: relative;
 }
 
 hr {
@@ -47,8 +48,8 @@ border: 1px solid white;
 
 .white-section {
   background-color: #fff;
-  height: 5%;
-  margin-bottom: 0.1%;
+  position: absolute; 
+  bottom: 0px;
 }
 
 #level-title {
