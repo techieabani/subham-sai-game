@@ -48,8 +48,12 @@ border: 1px solid white;
 
 .white-section {
   background-color: #fff;
-  position: absolute; 
-  bottom: 0px;
+}
+
+.footer-section {
+  position: absolute;
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 #level-title {
