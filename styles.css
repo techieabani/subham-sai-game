@@ -3,10 +3,30 @@ body {
   background-color: #011F3F;
 }
 
-.game-title {
-  font-size: 4rem;
+hr {
+border: 1px solid white;
+}
+
+.game-host {
+  font-size: 2rem;
   margin:  1%;
   color: orange;
+}
+
+.presents-text {
+    font-size: 1rem;
+    margin:  1%;
+    color: white;
+}
+
+.game-title {
+  font-size: 3rem;
+  margin:  1%;
+  color: Cyan;
+}
+
+.no-break {
+  white-space: nowrap;
 }
 
 .host-image {
@@ -14,11 +34,18 @@ body {
   width: 4rem;
 }
 
-#level-title,#score {
+#level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  margin:  1%;
+  margin:  2%;
   color: #FEF2BF;
+}
+
+ #score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  1%;
+  color: #ff4c68;
 }
 
 .container {
