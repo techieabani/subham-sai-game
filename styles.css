@@ -47,6 +47,8 @@ border: 1px solid white;
 
 .white-section {
   background-color: #fff;
+  height: 5%;
+  margin-bottom : 0.1%;
 }
 
 #level-title {
