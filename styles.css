@@ -33,6 +33,21 @@ border: 1px solid white;
   height : 4rem;
   width: 4rem;
 }
+.container-fluid {
+  padding: 1% 15%;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.copyright {
+  margin-top : 1%;
+}
+
+.white-section {
+  background-color: #fff;
+}
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
