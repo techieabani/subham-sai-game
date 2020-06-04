@@ -4,7 +4,8 @@ body {
 }
 
 hr {
-border: 1px solid white;
+  border: 1px solid white;
+  margin-top : 3rem;
 }
 
 .game-host {
@@ -34,7 +35,7 @@ border: 1px solid white;
   width: 4rem;
 }
 .container-fluid {
-  padding: 1% 15%;
+  padding: 7% 15%;
 }
 
 .social-icon {
@@ -53,19 +54,20 @@ border: 1px solid white;
   position: absolute;
   width: 100%;
   bottom: 0px;
+  height:10%
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  margin:  2%;
+  margin:  10%;
   color: #FEF2BF;
 }
 
  #score {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin:  1%;
+  margin:  10%;
   color: #ff4c68;
 }
 
