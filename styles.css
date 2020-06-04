@@ -49,6 +49,12 @@ border: 1px solid white;
   background-color: #fff;
 }
 
+.footer-section {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
