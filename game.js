@@ -36,9 +36,7 @@ if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
   if (userClickedPattern.length === gamePattern.length) {
       score+=100;
       $("#score").text("Your Score Now : " + score);
-    setTimeout(function(){
       nextSequence();
-    },1000);
   }
 } else {
   playSound("wrong");
